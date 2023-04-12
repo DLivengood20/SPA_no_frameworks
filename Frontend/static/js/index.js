@@ -1,3 +1,5 @@
+import Dashboard from "./views/Dashboard.js";
+
 const navigateTo = url => {
     history.pushState(null, null, url);
     router();
@@ -5,9 +7,9 @@ const navigateTo = url => {
 
 const router = async () => {
     const routes = [
-        { path: "/", view: () => console.log("Veiwing dashboard")},
-        { path: "/posts", view: () => console.log("Veiwing posts")},
-        { path: "/settings", view: () => console.log("Veiwing settings")},
+        { path: "/", view: Dashboard},
+        //{ path: "/posts", view: () => console.log("Veiwing posts")},
+        //{ path: "/settings", view: () => console.log("Veiwing settings")},
     ];
 
     const potentialMatches = routes.map(route => {
@@ -26,7 +28,9 @@ const router = async () => {
         };
     };
 
-    console.log(match.route.view());
+    const view = new match.route.view();
+
+    document.querySelector("#app").innerHTML = await view.getHtml();
 };
 
 window.addEventListener("popstate", router);
