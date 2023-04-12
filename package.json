@@ -1,0 +1,15 @@
+{
+  "name": "frontend-no-frameworks",
+  "version": "1.0.0",
+  "description": "This project is meant to practice the basics to gain a greater understanding of the core technologies that frameworks rely on.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}
