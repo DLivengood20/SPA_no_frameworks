@@ -1,0 +1,23 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    font-family: Aldrich;
+}
+
+a {
+    color: #1EC332;
+}
+
+.nav {
+    height: 3rem;
+    padding: 1rem;
+    background-color: #701A16;
+}
+
+.nav-link {
+    font-size: large;
+    color: #1EC332;
+    padding-right: 1rem;
+}
