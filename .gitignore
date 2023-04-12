@@ -1,2 +1,5 @@
 GhostWriter backup save
 *.backup
+
+Node.js
+/node_modules
